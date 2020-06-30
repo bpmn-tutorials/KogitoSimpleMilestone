@@ -1,5 +1,5 @@
-Non string parameters for Service Task' methods
------------------------------------------------
+Simple example how to use Milestones with Kogito
+------------------------------------------------
 
 ## Requirements
 * Java 11+
