@@ -8,6 +8,13 @@ Requirements:
 
 ![](src/main/resources/com/github/hasys/SimpleMilestone-svg.svg)
 
+Process settings:
+```
+Autostart=true
+ProcessType=Public
+Executable=True
+```
+
 To run this example:
 
 ```
@@ -18,3 +25,13 @@ In another terminal window execute:
 ```
 curl -X POST "http://localhost:8080/SimpleMilestone" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{}"
 ```
+
+Now you will see two messages in the console log:
+```
+AutostartMilestone started!
+TriggeredBySignal Milestone started!
+```
+
+First AutostartMilestone will be started togather with the process due to Autostart=true property.
+
+The second message will be printed after the second TriggeredBySignal Milestone triggered. It triggered by the Signal End.
